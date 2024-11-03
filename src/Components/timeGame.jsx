@@ -52,7 +52,7 @@ function TimeGame() {
         <div>
           <div>
             <div className="text-xl">
-              <h3 className="text-justify">
+              <h3 className="  text-center font-semibold">
                 The Challage is that you have to stop the watch as close as 3
                 seconds. if you are over 3 seconds you are out. Based on your
                 time you will get a score.
@@ -60,7 +60,7 @@ function TimeGame() {
             </div>
             <div className="text-center mt-8">
               <div className="py-4">
-                <h1 className="text-6xl md:text-8xl">{display()}</h1>
+                <h1 className="text-6xl md:text-8xl font-mono">{display()}</h1>
               </div>
               <div className="flex justify-center items-center gap-10 mt-5">
                 <button
@@ -74,7 +74,7 @@ function TimeGame() {
               </div>
               <div className="block mt-10 text-3xl">
                 <h1>
-                  Your Score is: <span>{score}</span>
+                  Your Score is: <span className="font-mono">{score}</span>
                 </h1>
               </div>
             </div>
