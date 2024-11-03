@@ -58,15 +58,14 @@ function Luck() {
           <h1>Try your luck!!</h1>
           <h1>Keep Mining</h1>
         </div>
-        <div className="grid grid-cols-1 place-items-center mt-6">
+        <div className="grid grid-cols-1 mt-6 place-items-center">
           <div className=""></div>
-          <div className="grid grid-cols-4 gap-4 h-full ">
+          <div className="grid grid-cols-4 gap-4 h-full md:min-w-96 md:min-h-96">
             {value.map((val, index) => (
               <div
                 className="btn"
                 key={index}
-                onClick={() => {toggleHandle(index)
-
+                onClick={() => {toggleHandle(index)          
                 }}
               >
                 <span className={val.pressed ? "hidden" : ""}>{val.value}</span>
@@ -78,7 +77,7 @@ function Luck() {
               </div>
             ))}
           </div>
-          <div className={`mt-2 text-xl text-red-600 ${issafe?'hidden':''}`}>
+          <div className={`mt-2 text-xl text-red-600 ${issafe?'hidden':''} text-center`}>
             <p>Oops!! Try again</p>
           </div>
           <button className="btn mt-4 btn-ghost text-white hover:text-black" onClick={changeHandler}>Reset</button>
